@@ -1,0 +1,84 @@
+.grouping-window {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px; /* Adjust width as needed */
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001; /* Ensure it appears above the shadow overlay */
+}
+
+.grouping-window.show {
+  right: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.window-body {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.window-body label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.window-body select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.window-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-button, .group-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #f0f0f0;
+}
+
+.group-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Shadow overlay */
+.shadow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it appears below the sliding window */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.shadow-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}

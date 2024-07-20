@@ -1,0 +1,86 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search-input-container {
+  display: flex;
+  padding-left: 85%;
+}
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-icon {
+  margin-right: 5px;
+  color: #888;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-icon {
+  color: #888;
+  cursor: pointer;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ddd;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  color: #aaa;
+}
+
+.page-size {
+  display: flex;
+  align-items: center;
+}
+
+.page-size select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
